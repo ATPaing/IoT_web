@@ -10,9 +10,10 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 main{
-    /* margin: auto; */
+    margin: auto;
     width: max-content;
     border-radius: 5px;
 }
