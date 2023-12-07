@@ -1,6 +1,5 @@
 const titles = document.querySelectorAll('.titles div')
 const infoSection = document.querySelector('.info_section')
-console.log(infoSection)
 for (const title of titles) {
     title.addEventListener('click', () => {
         removeAllSelect()
@@ -17,7 +16,6 @@ function removeAllSelect() {
 
 function showInfo(title) {
     const trimmedTitle = title.trim()
-    console.log(trimmedTitle)
     if (trimmedTitle === "Attendance record") {
         return `
             <div class="info_section__container">

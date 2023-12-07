@@ -111,9 +111,6 @@ main{
     font-size: clamp(0.75rem, 1.5vw, 1rem);
 }
 
-.info_section__year_wrapper{
-    margin-top: 1em;
-}
 
 .info_section img {
     display: block;
