@@ -4,15 +4,19 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html,body{
+    height: 100%;
+}
 
 .main_wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
+    /* overflow: hidden; */
 }
+
 main{
     margin: auto;
     width: max-content;
