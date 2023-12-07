@@ -5,13 +5,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    min-height: 100vh;
-    display: flex;
-}
-
 .main_wrapper{
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
 }
 main{
     margin: auto;
