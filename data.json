@@ -1,0 +1,40 @@
+[
+    {
+        "id": "HND A23SD235235",
+        "studentInfo" : {
+            "stuID": "23235235",
+            "name": "Tin Htun Naing",
+            "current_year": 2
+        },
+        "attendance" : {
+            "CRP": 100,
+            "IoT": 66.45,
+            "AP": 80.45,
+            "BPS": 94.5
+        },
+        "grades" : {
+            "firstYear": {
+                "Programming": "D",
+                "Database": "D",
+                "Networking": "D",
+                "Professional Practice": "D",
+                "Web Development": "D",
+                "PACP": "D",
+                "Security": "D",
+                "SDLC": "D"
+            },
+            "secondYear": {
+                "AP": "-",
+                "BPS": "-",
+                "CRP": "-",
+                "IoT": "-",
+                "Cloud": "-",
+                "Data Structure and Algorithm": "-",
+                "Network Security" : "-"
+            }
+        }, 
+        "schedule": "https://example.com",
+        "currentClass": "IoT",
+        "room": "209 2nd floor"
+    }
+]

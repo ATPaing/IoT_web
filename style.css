@@ -1,0 +1,121 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main{
+    /* margin: auto; */
+    width: max-content;
+    border-radius: 5px;
+}
+.student_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.3em;
+    margin-bottom: 0.75em;
+    /* border: 1px solid red; */
+}
+.student_info__first p,.student_info__second p  {
+    font-size: clamp(0.75rem, 1.5vw, 0.85rem);
+}
+
+.student_info__first span,.student_info__second span{
+    color: rgb(15, 133, 133);
+    font-weight: bold;
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
+}
+
+.titles{
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 5px 0px rgba(63, 63, 63, 0.75);
+    border-radius: 5px 5px 0 0;
+    margin-inline: auto;
+    margin-bottom: 1em;
+    /* gap: 1em; */
+}
+
+.titles div {
+    /* border: 1px solid black; */
+    padding: 0.5em;
+    color:white;
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
+    cursor: pointer;
+}
+
+.titles div:first-child {
+    border-radius: 5px 0 0 0;
+}
+
+.titles div:last-child {
+    border-radius: 0 5px 0 0;
+}
+
+.titles div:nth-child(2n+1)  {
+    background-color: rgb(44, 44, 44);
+    color:white;
+}
+
+.titles div:nth-child(2n)  {
+    background-color: rgb(117, 117, 117);
+    color:white;    
+}
+
+.titles .selected.selected{
+    background-color: rgb(255, 39, 39);
+}
+
+.info_section{
+    width: 100%;
+    min-height: 400px;
+    max-height: 450px;
+    /* border: 1px solid black; */
+    border-radius: 0 0 5px 5px;
+    overflow-y: auto;
+}
+
+.info_section__container{
+    /* border: 1px solid red; */
+    padding: 0.8em 0.5em;
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
+}
+
+.info_section__container:nth-child(2n + 1) {
+    background-color: rgb(227, 241, 241);
+}
+
+.info_section__container:nth-child(2n) {
+    background-color: rgb(203, 238, 238);
+}
+
+.info_section__container p {
+    color: #303030;
+    font-size: clamp(0.75rem, 1.5vw, 0.95);
+    font-weight: bold;
+}
+
+.info_section__container span {
+    color: rgb(38, 119, 151);
+    font-weight: bold;
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
+}
+
+.info_section__year_wrapper{
+    margin-top: 1em;
+}
+
+.info_section img {
+    display: block;
+    width: 400px;
+    margin-inline: auto;
+}
