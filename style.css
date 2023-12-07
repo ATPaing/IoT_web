@@ -4,15 +4,18 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
 
+body {
+    min-height: 100vh;
+    display: flex;
 }
+
 .main_wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    
 }
 main{
     margin: auto;
