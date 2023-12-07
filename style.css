@@ -25,12 +25,12 @@ main{
     /* border: 1px solid red; */
 }
 .student_info__first p,.student_info__second p  {
-    font-size: clamp(0.75rem, 1.5vw, 0.85rem);
+    font-size: clamp(0.65rem, 1.5vw, 0.75rem);
 }
 
 .student_info__first span,.student_info__second span{
     color: rgb(15, 133, 133);
-    font-weight: bold;
+    font-weight: 600;
     font-size: clamp(0.75rem, 1.5vw, 1rem);
 }
 
@@ -116,6 +116,6 @@ main{
 
 .info_section img {
     display: block;
-    width: 400px;
+    width: 300px;
     margin-inline: auto;
 }
