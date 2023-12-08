@@ -93,7 +93,7 @@ main{
 .info_section__container{
     /* border: 1px solid red; */
     padding: 0.8em 0.5em;
-    font-size: clamp(0.75rem, 1.5vw, 1rem);
+    font-size: clamp(0.9rem, 1.5vw, 1.25rem);
 }
 
 .info_section__container:nth-child(2n + 1) {
