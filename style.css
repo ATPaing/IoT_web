@@ -53,9 +53,9 @@ main{
 
 .titles div {
     /* border: 1px solid black; */
-    padding: 0.5em;
+    padding: 0.5em 1em;
     color:white;
-    font-size: clamp(0.75rem, 1.5vw, 1rem);
+    font-size: clamp(0.95rem, 1.5vw, 1.25rem);
     cursor: pointer;
 }
 
