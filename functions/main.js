@@ -124,7 +124,7 @@ async function addUserData() {
     const data = await res.json()
 
     for (const userData of data) {
-        if (userID != null && userID === userData.userInfo.userID) {
+        if (userID === userData.userInfo.userID) {
             studentId.textContent = userData.userInfo.studentID
             studentName.textContent = userData.userInfo.userName
             studentYear.textContent = userData.userInfo.year
