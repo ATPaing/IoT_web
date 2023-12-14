@@ -22,6 +22,7 @@ img {
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding-inline: 1em;
 }
 
 main {
@@ -30,7 +31,6 @@ main {
     justify-content: center;
     align-items: center;
     gap: 2em;
-    padding: 3em 2em;
 }
 
 form {
@@ -38,9 +38,16 @@ form {
     gap: 1em;
     flex-direction: column;
     align-items: flex-end;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     margin-top: 1.35em;
 }
+
+@media (max-width: 415px) {
+    form {
+        font-size: 1rem;
+    }
+}
+
 
 input{
     text-indent: 0.5em;
@@ -50,6 +57,13 @@ input{
     border: none;
     min-width: 200px;
     outline: none;
+}
+
+@media (max-width: 415px) {
+    input {
+        max-width: 150px;
+        padding: 0.5em;
+    }
 }
 
 .logo_wrapper{
