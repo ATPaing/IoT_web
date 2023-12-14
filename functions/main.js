@@ -7,16 +7,17 @@ const studentYear = document.querySelector('.student_year')
 
 const logoutBtn = document.querySelector('.log_out')
 
-// Get the current URL
-var url = window.location.href;
+// Get the search query from the URL
+const searchQuery = window.location.search;
 
-// Use URLSearchParams to parse the query parameters
-var params = new URLSearchParams(url);
+// Create a URLSearchParams object with the search query
+const queryParams = new URLSearchParams(searchQuery);
 
-// Retrieve the value of the 'type' parameter
-var typeValue = params.get('type');
+// Get the value of the parameter query
+const queryValue = queryParams.get('type');
 
-const userID = sessionStorage.getItem('userId') || typeValue
+// store userID
+const userID = sessionStorage.getItem('userId') || queryValue
 
 import {
     getAuth,
@@ -25,7 +26,7 @@ import {
 
 
 
-addUserData()
+
 for (const title of titles) {
     title.addEventListener('click', () => {
         removeAllSelect()
@@ -139,10 +140,9 @@ async function addUserData() {
         }
     }
 
-    
 }
-
 addUserData()
+
 
 const auth = getAuth()
 logoutBtn.addEventListener('click', () => {
