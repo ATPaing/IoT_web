@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signIn</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/signIn.css">
+</head>
+<body>
+    <div class="main_wrapper">
+        <main>
+            <div class="logo_wrapper">
+                <img src="../images/logo.png" alt="logo">
+            </div>
+            <form method="POST">
+                <div class="input_wrapper">
+                    <label id="username_input">Username: </label>
+                    <input type="email" name="username" id="username_input" placeholder="example@gmail.com">
+                </div>
+                <div class="input_wrapper">
+                    <label id="password_input">Password: </label>
+                    <input type="password" name="pwd" id="password_input" placeholder="Enter your password here">
+                </div>
+                <button>Log in</button>
+            </form>
+        </main>
+        <div class="notification_wrapper">
+            
+            <div class="notification">
+                <p class="alert">Alert</p>
+                <p class="noti_desc">Please wait</p>
+                <p class="noti_close">Close</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+
+    const firebaseConfig = {
+
+        apiKey: "AIzaSyBXCGatsRQybHqIKsZm2Qf60APKrIiYExk",
+        authDomain: "iotweb-c6665.firebaseapp.com",
+        databaseURL: "https://iotweb-c6665-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "iotweb-c6665",
+        storageBucket: "iotweb-c6665.appspot.com",
+        messagingSenderId: "227427759096",
+        appId: "1:227427759096:web:e188b22d81871fdc6f9c0d"
+
+    };
+    const app = initializeApp(firebaseConfig);
+</script>
+<script src="../functions/signIn.js" type="module"></script>
+</html>

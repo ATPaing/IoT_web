@@ -1,0 +1,130 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    color: white;
+}
+
+img {
+    display: block;
+}
+
+.main_wrapper{
+    position: relative;
+    background-image: linear-gradient(#1C264A, #121213);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 3em 2em;
+}
+
+form {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 1.15rem;
+    margin-top: 1.35em;
+}
+
+input{
+    text-indent: 0.5em;
+    padding: 0.5em 1em;
+    padding-left: 0;
+    border-radius: 5px;
+    border: none;
+    min-width: 200px;
+    outline: none;
+}
+
+.logo_wrapper{
+    width: max-content;
+}
+
+.logo_wrapper img{
+    width: 100px;
+}
+
+.input_wrapper{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+button {
+    border: 2px solid transparent;
+    margin: auto;
+    padding: 0.3em 1em;
+    background-color: rgb(45, 96, 236);
+    color: #FFFFFF;
+    margin-top: 2em;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    border: 2px solid rgb(45, 96, 236);
+    background-color: transparent;
+}
+
+
+.notification_wrapper{
+    position: absolute;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(85, 85, 85, 0.144);
+}
+
+.notification{
+    width: max-content;
+    min-width: 300px;
+
+    background-color: rgb(20, 76, 114);
+    border-radius: 5px;
+}
+
+.alert{
+    background-color: rgb(233, 94, 94);
+    border-radius: 5px 5px 0 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 0.5em 1em;
+}
+
+.noti_desc{
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding: 1em 1em;
+}
+
+.noti_close{
+    width: max-content;
+    margin-left: auto;
+    color: rgba(255, 255, 255, 0.788);
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.noti_close:hover{
+    color: white;
+}

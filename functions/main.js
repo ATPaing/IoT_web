@@ -1,5 +1,23 @@
 const titles = document.querySelectorAll('.titles div')
 const infoSection = document.querySelector('.info_section')
+
+const studentId = document.querySelector('.student_id')
+const studentName = document.querySelector('.student_name')
+const studentYear = document.querySelector('.student_year')
+
+const logoutBtn = document.querySelector('.log_out')
+
+
+const userID = sessionStorage.getItem('userId')
+
+import {
+    getAuth,
+    signOut
+} from "https://cdnjs.cloudflare.com/ajax/libs/firebase/10.7.1/firebase-auth.js";
+
+
+
+addUserData()
 for (const title of titles) {
     title.addEventListener('click', () => {
         removeAllSelect()
@@ -97,6 +115,32 @@ function showInfo(title) {
         </div>
         `
     }else if (trimmedTitle === "Schedule") {
-        return `<image src="./images/timetable.png"/>`
+        return `<image src="../images/timetable.png" alt="Schedule image"/>`
     }
 }
+
+async function addUserData() {
+    const res = await fetch('https://iotweb-c6665-default-rtdb.asia-southeast1.firebasedatabase.app/cardInfo.json')
+    const data = await res.json()
+
+    for (const userData of data) {
+        if (userID != null && userID === userData.userInfo.userID) {
+            studentId.textContent = userData.userInfo.studentID
+            studentName.textContent = userData.userInfo.userName
+            studentYear.textContent = userData.userInfo.year
+        }
+    }
+
+    
+}
+
+addUserData()
+
+const auth = getAuth()
+logoutBtn.addEventListener('click', () => {
+    signOut(auth).then(() => {
+        window.location.href = `../pages/signIn.html`
+    }).catch((error) => {
+        console.log(error.code)
+    });
+})
