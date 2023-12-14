@@ -27,7 +27,7 @@ form.addEventListener('submit', async (e) => {
             const authToken = cred.user.uid
 
             sessionStorage.setItem('userId', authToken)
-            window.location.href = `../pages/index.html?type=${authToken[0]}`
+            window.location.href = `../pages/index.html?type=${authToken[0]}${authToken[1]}${authToken[2]}`
         } catch (error) {
             if (error.code === 'auth/user-not-found') {
                 noti_desc.textContent = 'User not found'
