@@ -7,8 +7,16 @@ const studentYear = document.querySelector('.student_year')
 
 const logoutBtn = document.querySelector('.log_out')
 
+// Get the current URL
+var url = window.location.href;
 
-const userID = sessionStorage.getItem('userId')
+// Use URLSearchParams to parse the query parameters
+var params = new URLSearchParams(url);
+
+// Retrieve the value of the 'type' parameter
+var typeValue = params.get('type');
+
+const userID = sessionStorage.getItem('userId') || typeValue
 
 import {
     getAuth,
