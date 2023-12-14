@@ -1,0 +1,7 @@
+{
+    "routes": [
+        { "src": "/", "dest": "/pages/signIn.html" },
+        { "src": "/index.html", "dest": "/pages/index.html" },
+        { "src": "/signIn.html", "dest": "/pages/signIn.html" }
+    ]
+}
