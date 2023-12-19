@@ -61,67 +61,65 @@ function showInfo(title) {
     } else if (trimmedTitle === "Grades") {
         return `
             <div class="info_section__year_wrapper">
-            <div class="info_section__year">
-                <h4>First year</h4>
+                <div class="info_section__year">
+                    <h4>First year</h4>
+                    <div class="info_section__container">
+                        <p>Programming: &nbsp &nbsp<span>D</span></p>
+                    </div>
+                    <div class="info_section__container">
+                        <p>Database: &nbsp &nbsp<span>D</span></p>
+                    </div>
+                    <div class="info_section__container">
+                        <p>Networking: &nbsp &nbsp<span>D</span></p>
+                    </div>
+                    <div class="info_section__container">
+                        <p>Professional Practice: &nbsp &nbsp<span>D</span></p>
+                    </div>
+                    <div class="info_section__container">
+                        <p>Web Development: &nbsp &nbsp<span>D</span></p>
+                    </div>
+                    <div class="info_section__container">
+                        <p>PACP: &nbsp &nbsp<span>D</span></p>
+                    </div>
+                    <div class="info_section__container">
+                        <p>Security: &nbsp &nbsp<span>D</span></p>
+                    </div>
+                    <div class="info_section__container">
+                        <p>SDLC: &nbsp &nbsp<span>D</span></p>
+                    </div>
+                </div>
+                <div class="info_section__year_wrapper">
+                    <div class="info_section__year">
+                        <h4>Second year</h4>
+                    </div>
+                    <div>
+                        <div class="info_section__container">
+                            <p>Programming: &nbsp &nbsp<span>D</span></p>
+                        </div>
+                        <div class="info_section__container">
+                            <p>Database: &nbsp &nbsp<span>D</span></p>
+                        </div>
+                        <div class="info_section__container">
+                            <p>Networking: &nbsp &nbsp<span>D</span></p>
+                        </div>
+                        <div class="info_section__container">
+                            <p>Professional Practice: &nbsp &nbsp<span>D</span></p>
+                        </div>
+                        <div class="info_section__container">
+                            <p>Web Development: &nbsp &nbsp<span>D</span></p>
+                        </div>
+                        <div class="info_section__container">
+                            <p>PACP: &nbsp &nbsp<span>D</span></p>
+                        </div>
+                        <div class="info_section__container">
+                            <p>Security: &nbsp &nbsp<span>D</span></p>
+                        </div>
+                        <div class="info_section__container">
+                            <p>SDLC: &nbsp &nbsp<span>D</span></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <div class="info_section__container">
-                    <p>Programming: &nbsp &nbsp<span>D</span></p>
-                </div>
-                <div class="info_section__container">
-                    <p>Database: &nbsp &nbsp<span>D</span></p>
-                </div>
-                <div class="info_section__container">
-                    <p>Networking: &nbsp &nbsp<span>D</span></p>
-                </div>
-                <div class="info_section__container">
-                    <p>Professional Practice: &nbsp &nbsp<span>D</span></p>
-                </div>
-                <div class="info_section__container">
-                    <p>Web Development: &nbsp &nbsp<span>D</span></p>
-                </div>
-                <div class="info_section__container">
-                    <p>PACP: &nbsp &nbsp<span>D</span></p>
-                </div>
-                <div class="info_section__container">
-                    <p>Security: &nbsp &nbsp<span>D</span></p>
-                </div>
-                <div class="info_section__container">
-                    <p>SDLC: &nbsp &nbsp<span>D</span></p>
-                </div>
-            </div>
-        </div>
-        <div class="info_section__year_wrapper">
-            <div class="info_section__year">
-                <h4>Second year</h4>
-            </div>
-            <div>
-                <div class="info_section__container">
-                    <p>Programming: &nbsp &nbsp<span>-</span></p>
-                </div>
-                <div class="info_section__container">
-                    <p>Database: &nbsp &nbsp<span>-</span></p>
-                </div>
-                <div class="info_section__container">
-                    <p>Networking: &nbsp &nbsp<span>-</span></p>
-                </div>
-                <div class="info_section__container">
-                    <p>Professional Practice: &nbsp &nbsp<span>-</span></p>
-                </div>
-                <div class="info_section__container">
-                    <p>Web Development: &nbsp &nbsp<span>-</span></p>
-                </div>
-                <div class="info_section__container">
-                    <p>PACP: &nbsp &nbsp<span>-</span></p>
-                </div>
-                <div class="info_section__container">
-                    <p>Security: &nbsp &nbsp<span>-</span></p>
-                </div>
-                <div class="info_section__container">
-                    <p>SDLC: &nbsp &nbsp<span>-</span></p>
-                </div>
-            </div>
-        </div>
         `
     }else if (trimmedTitle === "Schedule") {
         return `<image src="../images/timetable.png" alt="Schedule image"/>`
